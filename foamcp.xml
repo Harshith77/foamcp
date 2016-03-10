@@ -47,7 +47,12 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_forward" id="383"></block>
+          <block type="multimedia_playwav" id="448">
+            <field name="WAV">beep.w</field>
+            <next>
+              <block type="movement_forward" id="383"></block>
+            </next>
+          </block>
         </statement>
         <next>
           <block type="movement_stop" id="432"></block>
