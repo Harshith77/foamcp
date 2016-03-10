@@ -38,6 +38,8 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stutter" id="314"></block>
+    </next>
   </block>
-  <block type="movement_stutter" id="314" x="200" y="89"></block>
 </xml>
