@@ -39,7 +39,17 @@
       </block>
     </statement>
     <next>
-      <block type="movement_forward" id="383"></block>
+      <block type="controls_whileUntil" id="415" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_button" id="422">
+            <field name="OBJECT">ENTER</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="383"></block>
+        </statement>
+      </block>
     </next>
   </block>
 </xml>
