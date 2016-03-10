@@ -1,1 +1,27 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_repeat" id="40" inline="true" x="24" y="14">
+    <value name="TIMES">
+      <block type="math_number" id="87">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="56">
+        <next>
+          <block type="robot_delay" id="73" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="80">
+                <field name="NUM">350</field>
+              </block>
+            </value>
+            <next>
+              <block type="multimedia_playwav" id="101">
+                <field name="WAV">beep.w</field>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
