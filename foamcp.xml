@@ -40,7 +40,11 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="203"></block>
+      <block type="movement_forward" id="383">
+        <next>
+          <block type="movement_stop" id="203"></block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
