@@ -48,7 +48,7 @@
         </value>
         <statement name="DO">
           <block type="multimedia_playwav" id="448">
-            <field name="WAV">beep.w</field>
+            <field name="WAV">	8kgsm.wav</field>
             <next>
               <block type="movement_forward" id="383"></block>
             </next>
