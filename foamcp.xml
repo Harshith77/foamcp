@@ -7,17 +7,37 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="229">
+      <block type="led_select" id="262" inline="true">
+        <field name="ACTION">ON</field>
+        <value name="LED">
+          <block type="math_number" id="288">
+            <field name="NUM">1</field>
+          </block>
+        </value>
         <next>
-          <block type="robot_delay" id="73" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="80">
-                <field name="NUM">350</field>
+          <block type="led_select" id="297" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="math_number" id="304">
+                <field name="NUM">2</field>
               </block>
             </value>
             <next>
-              <block type="multimedia_playwav" id="101">
-                <field name="WAV">beep.w</field>
+              <block type="movement_forward" id="229">
+                <next>
+                  <block type="robot_delay" id="73" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="80">
+                        <field name="NUM">350</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="multimedia_playwav" id="101">
+                        <field name="WAV">beep.w</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
