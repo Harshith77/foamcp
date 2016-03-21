@@ -50,7 +50,17 @@
           <block type="multimedia_playwav" id="12">
             <field name="WAV">beep.w</field>
             <next>
-              <block type="movement_forward" id="13"></block>
+              <block type="movement_forward" id="13">
+                <next>
+                  <block type="robot_delay" id="24" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="31">
+                        <field name="NUM">3000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </statement>
