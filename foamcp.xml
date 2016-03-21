@@ -39,28 +39,17 @@
       </block>
     </statement>
     <next>
-      <block type="controls_whileUntil" id="10" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_button" id="11">
-            <field name="OBJECT">ENTER</field>
+      <block type="controls_repeat" id="48" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="55">
+            <field name="NUM">500</field>
           </block>
         </value>
         <statement name="DO">
           <block type="multimedia_playwav" id="12">
             <field name="WAV">beep.w</field>
             <next>
-              <block type="movement_forward" id="13">
-                <next>
-                  <block type="robot_delay" id="24" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="31">
-                        <field name="NUM">3000</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
-              </block>
+              <block type="movement_forward" id="13"></block>
             </next>
           </block>
         </statement>
